@@ -1,9 +1,9 @@
 {
   "name": "nodejs-diario",
   "version": "1.0.0",
-  "main": "teste.js",
+  "main": "server.ts",
   "scripts": {
-    "start": "node --env-file=.env --import=tsx --watch src/teste.ts"
+    "start": "node --env-file=.env --import=tsx --watch src/server.ts"
   },
   "author": "inijs",
   "license": "ISC",

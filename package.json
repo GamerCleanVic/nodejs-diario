@@ -9,9 +9,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.10.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.15.6",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
   }
 }

@@ -1,13 +1,14 @@
-import {createServer} from 'node:http';
-//Próxima aula: Introdução ao Express - Modulo 3 #1
+//Próxima aula: Configuração básica do Express - Modulo 3 #2
+import express from 'express';
 
-const server = createServer((req, res) => {
-    let nome: string = "DJ";
-    let idade: number = 90;
-    res.end(`Olah server, eu sou ${nome} e tenho ${idade} anos.`);
+const server = express();
+
+server.get('/', (req, res) => {
+    let name = 'Pedro';
+    let age = 25;
+    res.send(`Olá eu sou ${name} e tenho ${age} anos.`);
 });
 
 server.listen(3000, () => {
-    //document.write("<h1 style='color: green;'>Server funcionado</h1>");
-    console.log("Server funcionando");
+    console.log('Servidor está rodando no link http://localhost:3000');
 });
